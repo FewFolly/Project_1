@@ -369,12 +369,24 @@ template {
   color: #fff;
 }
 
+.button_outline {
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+}
+
 .container {
+  width: 85%;
   max-width: 1256px;
   margin: auto;
 }
 
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
   background-color: #131313;
   padding: 24px 0;
 }
@@ -413,9 +425,33 @@ template {
 
 .promo {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 100px;
   background: #131313 url("../IMG/promo-bg.jpg") no-repeat center/cover;
   height: 100vh;
   color: #fff;
+}
+
+.promo__button {
+  margin-right: 20px;
+}
+
+.promo__content {
+  max-width: 670px;
+}
+
+.promo__text {
+  font-style: 22px;
+  max-width: 500px;
 }
 
 .promo__inst {
@@ -424,6 +460,27 @@ template {
   left: 0;
   max-width: 80px;
   height: 100%;
+}
+
+.promo__scroll-down {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  min-width: 247px;
+  min-height: 97px;
+  background-color: #131313;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
 }
 
 .inst {
@@ -449,6 +506,18 @@ template {
 
 .title {
   margin: 0;
+  font-family: 'Yeseva One', cursive;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+.title_primary {
+  color: #E3B873;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
