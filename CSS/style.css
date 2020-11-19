@@ -411,6 +411,46 @@ template {
   margin-right: 45px;
 }
 
+.promo {
+  position: relative;
+  background: #131313 url("../IMG/promo-bg.jpg") no-repeat center/cover;
+  height: 100vh;
+  color: #fff;
+}
+
+.promo__inst {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 80px;
+  height: 100%;
+}
+
+.inst {
+  background-color: #131313;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.inst__link {
+  text-transform: uppercase;
+  color: #E3B873;
+  text-decoration: none;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.title {
+  margin: 0;
+}
+
 body {
   font-family: 'Futura Book', sans-serif;
   font-size: 14px;
