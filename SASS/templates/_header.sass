@@ -1,3 +1,4 @@
+// Настройка области Header
 .header
     position: fixed
     top: 0
@@ -6,21 +7,32 @@
     width: 100%
     background-color: $dark
     padding: 24px 0
+// Настройка положения элементов в Header
 .menu
     display: flex
     justify-content: space-between
     align-items: center
+// Настройка логотипа в Header
 .logo
     color: $primary
     text-transform: uppercase
+// Настройка навигационной панели в Header
 .nav
+    // Настройка элеметов навигационной панели
     &__item
         color: $light
         text-decoration: none
         text-transform: uppercase
         margin-right: 40px
+        transition: color 0.2s
+        // Декоративный эффект наведения на элемент nav
+        &:hover
+            color: $primary
+// Настройка элемента phone
 .phone
     color: $primary
+// Настройка блока контактов
 .contacts
+    // Настройка элемента phone
     &__phone
         margin-right: 45px

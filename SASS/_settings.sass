@@ -1,0 +1,26 @@
+// Настройка width и height на сайте,чтобы они задавали размеры блока,а не контента
+*, *:before, *:after
+    box-sizing: border-box
+// Настройка элементов всего сайта
+body
+    font-family: 'Futura Book', sans-serif
+    font-size: 14px
+// Настройка секций на сайте
+.section
+    // Настройка положения оглавления секции
+    &-title
+        text-align: center
+        text-transform: uppercase
+        font-family: 'Yeseva One',cursive
+        // Настройка положения картинки в оглавлении секции
+        &__image
+            display: flex
+            justify-content: center
+            align-items: center
+            // Декоративные полосы около картинки в оглавлении секции
+            &::after, &::before
+                content: ''
+                width: 32px
+                height: 2px
+                background-color: $primary
+                margin: 0 10px

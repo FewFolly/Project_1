@@ -1,13 +1,20 @@
+// Шрифты
 @import 'fonts'
+// Библиотека отображений
 @import 'normalize'
+// Переменные
 @import 'var'
+// Общие элементы сайта
 @import 'interface'
+// Положение контента на сайте
 @import 'grid'
-@import 'templates/header'
-@import 'templates/promo'
+// Общие блоки сайта и его настройка в целом
+@import 'settings'
 
-*, *:before, *:after
-    box-sizing: border-box
-body
-    font-family: 'Futura Book', sans-serif
-    font-size: 14px
+// -----------TEMPLATES----------- 
+// Настройки стилей блока header
+@import 'templates/header'
+// Настройки стилей блока main секции promo
+@import 'templates/promo'
+// Настройки стилей блока main секции control
+@import 'templates/control'

@@ -1,7 +1,8 @@
+// Настройка всей области промо
 .promo
     position: relative
     display: flex
-    // 
+    // Не нужный кусок кода
     justify-content: center
     flex-direction: column
     // 
@@ -9,19 +10,34 @@
     background: $dark url('../IMG/promo-bg.jpg') no-repeat center / cover
     height: 100vh
     color: $light
+    // Оформление затенения background
+    &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-color: rgba($dark,0.7)
+    // Отступы кнопок в промо
     &__button
         margin-right: 20px
+    // Размер промо контента
     &__content
+        position: relative
         max-width: 670px
+    // Размер текста в промо контенте
     &__text
         font-style: 22px
         max-width: 500px
+    // Настройка положения инстаграм контейнера
     &__inst
         position: absolute
         top: 0
         left: 0
         max-width: 80px
         height: 100%
+    // Настройка положения контейнера прокрутки
     &__scroll-down
         position: absolute
         left: 0
@@ -35,22 +51,43 @@
         text-decoration: none
         text-transform: uppercase
         color: $light
-
+        // Значок прокрутки в панели scroll-down
+        &::after
+            content: ''
+            width: 30px
+            height: 30px
+            margin-left: 12px
+            background: url('../IMG/icons/arrow-down.svg') no-repeat center
+            border: 2px solid $primary
+            border-radius: 50%
+// Настройка контейнера инстаграм
 .inst
     background-color: $dark
     display: flex
     justify-content: center
     align-items: center
+    // Настройка положения элементов в inst контейнере
     &__link
+        display: flex
+        align-items: center
         text-transform: uppercase
         color: $primary
         text-decoration: none
         transform: rotate(90deg)
-
+        line-height: 0.8
+        // Декоративная линия после инстаграм
+        &::after
+            content: ''
+            width: 50px
+            height: 1px
+            background-color: $primary
+            margin-left: 18px
+// Настройка заголовка в промо
 .title
     margin: 0
     font-family: 'Yeseva One', cursive
     text-transform: uppercase
     font-size: 40px
+    // Модификация части текста в заголовке промо
     &_primary
         color: $primary
