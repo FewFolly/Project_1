@@ -398,7 +398,7 @@ body {
 }
 
 .button {
-  padding: 13px 20px;
+  padding: 11px 24px;
   border: none;
   border-radius: 2px;
   text-transform: uppercase;
@@ -460,6 +460,7 @@ body {
 }
 
 .logo {
+  font-size: 1.075rem;
   color: #E3B873;
   text-transform: uppercase;
 }
@@ -468,7 +469,7 @@ body {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
-  margin-right: 2.85rem;
+  margin-right: 2.47rem;
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
@@ -514,7 +515,12 @@ body {
 }
 
 .promo__button {
-  margin-right: 20px;
+  margin-right: 18px;
+  padding: 20px 29px;
+}
+
+.promo__button_sz {
+  padding: 20px 47px;
 }
 
 .promo__content {
@@ -524,8 +530,11 @@ body {
 }
 
 .promo__text {
-  font-style: 1.57rem;
+  font-size: 1.57rem;
   max-width: 500px;
+  line-height: 133%;
+  margin-bottom: 3.3rem;
+  margin-top: 1rem;
 }
 
 .promo__inst {
@@ -537,6 +546,7 @@ body {
 }
 
 .promo__scroll-down {
+  font-family: 'Yeseva One',cursive;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -593,6 +603,7 @@ body {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
   line-height: 0.8;
+  font-size: 1.1rem;
 }
 
 .inst__link::after {
@@ -608,6 +619,7 @@ body {
   font-family: 'Yeseva One', cursive;
   text-transform: uppercase;
   font-size: 2.857rem;
+  line-height: 1.4;
 }
 
 .title_primary {
