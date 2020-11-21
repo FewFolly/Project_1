@@ -1,0 +1,49 @@
+@media screen and ( max-width: 1200px)
+    html
+        font-size: 12px
+    .nav
+        &__item
+            margin-right: 1rem
+
+@media screen and ( max-width: 992px )
+    .nav
+        display: none
+    .promo
+        &__inst
+            display: none
+        &__content
+            margin-left: 0
+
+@media screen and ( max-width: 570px )
+    .contacts
+        &__button
+            display: none
+        &__phone
+            margin-right: 0
+            color: $light
+            text-decoration: none
+    .title
+        font-size: 1.64rem
+        // 23px
+    .promo
+        &__text
+            font-size: 1.29rem
+            //18px
+            margin-bottom: 2.28rem
+            //32px
+        &__content
+            max-width: 22.86rem
+            //320px
+        &__button
+            display: block
+            min-width: 22.86rem
+            //320px
+            margin-bottom: 1.85rem
+            //26px
+        &__scroll-down
+            display: none
+
+@media screen and ( max-height: 520px )
+    .promo
+        &__scroll-down
+            display: none
