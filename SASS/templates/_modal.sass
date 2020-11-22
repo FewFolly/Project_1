@@ -1,5 +1,8 @@
 // Положение модального области относительно сайта
 .modal
+    opacity: 0
+    visibility: hidden
+
     position: fixed
     top: 0
     right: 0
@@ -12,6 +15,10 @@
     display: flex
     align-items: center
     justify-content: center
+    // Отображение модального окна
+    &_visible
+        opacity: 1
+        visibility: visible
     // Настройка модального окна
     &__dialog
         max-width: 36.36rem
