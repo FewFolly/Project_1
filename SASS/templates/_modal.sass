@@ -1,0 +1,60 @@
+// Положение модального области относительно сайта
+.modal
+    position: fixed
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: rgba($dark,0.6)
+    z-index: 199
+    display: flex
+    align-items: center
+    justify-content: center
+    // Настройка модального окна
+    &__dialog
+        max-width: 36.36rem
+        // 509px
+        position: relative
+        background: $dark url('../IMG/icons/bg-lines.svg') no-repeat center
+        color: $light
+        padding: 2.357rem 3.5rem 1.928rem
+        //33px 49px 27px
+    // Настройка кнопки закрыть модального окна
+    &__close
+        position: absolute
+        right: 0
+        top: 0
+        width: 28px
+        height: 28px
+        background: transparent url('../IMG/icons/close.svg') no-repeat center
+        border: none
+        margin: 12px
+        cursor: pointer
+    // Настройка заголовка модального окна
+    &__title
+        font-family: 'Yeseva One',cursive
+        font-size: 1.357rem
+        text-align: center
+        //19px
+        margin: 0
+        margin-bottom: 2.428rem
+        // 34px
+    // Настройка формы модального окна
+    &__form
+        display: flex
+        flex-direction: column
+    // Настройка input
+    &__input
+        margin-bottom: 3.428rem
+        // 48px
+        &:last-of-type
+            margin-bottom: 1rem
+    // Настройка политики соглашения
+    &__policy
+        margin-bottom: 2.7rem
+        // 38px
+    // Настройка кнопки модального окна
+    &__button
+        align-self: flex-end
