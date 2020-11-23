@@ -864,6 +864,10 @@ img {
   padding: 1.285rem 4.785rem;
 }
 
+.control__input {
+  color: #131313;
+}
+
 .video__play {
   position: relative;
   margin: auto;
