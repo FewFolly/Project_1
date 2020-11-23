@@ -14,11 +14,43 @@ img
 // Настройка секций на сайте
 .section
     padding: 60px
+    // Модификация для темной секции
+    &_dark
+        background-color: $dark
+        color: $light
     // Настройка положения оглавления секции
     &-title
         text-align: center
-        text-transform: uppercase
-        font-family: 'Yeseva One',cursive
+        // Модификатор для левого расположения заголовка
+        &_left
+            text-align: left
+        // Настройка вида оглавления
+        &__heading
+            text-transform: uppercase
+            font-family: 'Yeseva One',cursive
+            line-height: 138.6%
+            // Модификация для желтого оглавления
+            &_primary
+                color: $primary
+        // Блок с словом в заголовке секции
+        &__word
+            display: flex
+            align-items: center
+            // Декоративная линия после слова в заголовке секции
+            &::after
+                content: ''
+                width: 90px
+                height: 2px
+                background-color: $primary
+                margin-left: 2rem
+        // Текст внутри заголовка
+        &__text
+            font-size: 1.28rem
+            //18px
+            line-height: 2.07rem
+            //29px
+            max-width: 31.57rem
+            //442px
         // Настройка положения картинки в оглавлении секции
         &__image
             display: flex

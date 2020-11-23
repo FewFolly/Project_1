@@ -16,6 +16,38 @@ modalBtn.forEach(element => {
 closeBtn.addEventListener('click', switchModal);
 });
 */
+document.addEventListener("DOMContentLoaded",function(event){
+    var mySwiper = new Swiper('.swiper-container', {
+        // Optional parameters
+        loop: true,
+      
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'bullets',
+        },
+      
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      
+        // And if we need scrollbar
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+    });
+
+    var prev = $('.swiper-button-prev');
+    var next = $('.swiper-button-next');
+    var bullets = $('.swiper-pagination');
+
+    next.css('left',prev.width() + 10 + bullets.width() + 10);
+    bullets.css('left',prev.width() + 10);
+});
+
+
 
 // БОЖЕСКИЙ JQUERY
 $(document).ready(function () {
