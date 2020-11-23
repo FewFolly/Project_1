@@ -1,1 +1,82 @@
+// Настройка секции control относительно всего сайта
+.control
+    &__section-title
+        margin-bottom: 2.214rem
+        margin-top: -30rem
+        // 31px
+    // Настройка блока внутри control
+    &__video
+        display: flex
+        margin: auto
+        margin-bottom: 4.428rem
+        // 62px
+        position: relative
+        max-width: 58.357rem
+        // 817px
+        min-height: 31rem
+        // 434px
+        background: $dark url('../IMG/control/video-bg.jpg') no-repeat center
+        box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15)
+        // Декоративный элемент control__video
+        &::before
+            position: absolute
+            content: ''
+            width: 100%
+            height: 100%
+            background-color: rgba($dark,0.8)
+    // Настройка текста секции control
+    &__text
+        max-width: 40.785rem
+        // 571px
+        margin: auto
+        margin-bottom: 4.285rem
+        // 60px
+        font-size: 1.428rem
+        // 20px
+        line-height: 2.4rem
+        // 30px
+        text-align: center
+        // Линия над текстом секции control
+        &::before
+            content: ''
+            display: block
+            margin: auto
+            margin-bottom: 2.5rem
+            // 35px
+            width: 55px
+            height: 2px
+            background-color: $primary
+            border-radius: 30px
+    // Форма секции control
+    &__form
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        max-width: 55rem
+        // 770px
+        margin: auto
+    // Label+input
+    &__input-group
+        display: flex
+        flex-direction: column
+        flex-basis: 30%
+    // Откровенный костыль для pixel prefect
+    &__label
+        margin-bottom: 7px
+    // Политика соглашения секции control
+    &__policy
+        flex-basis: 100%
+        margin-top: 1.2rem
+        &-label
+            justify-content: center
+    // Кнопка секции control
+    &__button
+        padding: 1.285rem 4.785rem
+        // 19px 67px
 
+// Настройка блока video
+.video
+    // Настройка кнопки воспроизведения в блоке video
+    &__play
+        position: relative
+        margin: auto
