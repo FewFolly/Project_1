@@ -63,5 +63,36 @@ $(document).ready(function () {
     closeBtn.on('click',function(){
         modal.toggleClass('modal_visible');
     });
+    // Не работающий WOW
     new WOW().init();
+
+    // Validation Form
+    $('.modal__form').validate({
+        errorClass: "invalid",
+        rules: {
+            // строчное правило имени
+            userName: {required: true,minlength: 2},
+            userPhone: "required",
+            // блочное правило почты
+            userEmail: {
+              required: true,
+              email: true
+            }
+          },
+        // сообщения
+        messages: {
+            userName: {
+                required: "Обязательное поле для ввода",
+                minlength: "Имя должно быть не короче двух букв"
+            },
+            userPhone: "Обязательное поле для ввода",
+            userEmail: {
+              required: "Обязательное поле для ввода",
+              email: "Введите свою почту в формате name@domain.com"
+            }
+        }
+    });
+
+    // Form Mask
+    $('[type=tel]').mask('+7(000) 000-00-00',{placeholder: "+7 (___) ___-__-__"});
 });
