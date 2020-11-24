@@ -53,10 +53,12 @@
             .policy__label
                 &::before
                     background: $primary url('../IMG/icons/check.svg') no-repeat center / 0.8rem
-    // Настройка лейбла
+    // Настройка лейбла policy
     &__label
         display: flex
         align-items: center
+        font-size: 1.142rem
+        // 16px
         // Область для обновленного чекбокса
         &::before
             content: ''
@@ -67,3 +69,6 @@
             cursor: pointer
             margin-right: 0.64rem
             // 9px
+        // Модификатор для выравнивания policy в центр блока
+        &_center
+            justify-content: center
