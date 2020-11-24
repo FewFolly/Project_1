@@ -45,6 +45,7 @@ document.addEventListener("DOMContentLoaded",function(event){
 
     next.css('left',prev.width() + 10 + bullets.width() + 10);
     bullets.css('left',prev.width() + 10);
+
 });
 
 
@@ -62,4 +63,5 @@ $(document).ready(function () {
     closeBtn.on('click',function(){
         modal.toggleClass('modal_visible');
     });
+    new WOW().init();
 });
