@@ -1076,6 +1076,62 @@ input.invalid {
   padding: 4.285rem 0;
 }
 
+.footer__map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.footer__info {
+  max-width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 4rem;
+}
+
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+}
+
+.info__title {
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: #E3B873;
+  font-size: 1.428rem;
+  font-weight: 400;
+  line-height: 2rem;
+  font-family: "Yeseva One", cursive;
+}
+
+.info__social {
+  margin-top: 1.857rem;
+  text-align: center;
+}
+
+.info__social-item {
+  margin-left: 1.071rem;
+}
+
 .modal {
   opacity: 0;
   visibility: hidden;
