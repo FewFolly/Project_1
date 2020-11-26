@@ -439,6 +439,25 @@ img {
   margin-bottom: 75px;
 }
 
+.section-title__text_bottom {
+  max-width: 40.571rem;
+  margin: auto;
+  margin-top: 80px;
+  text-align: center;
+  font-size: 1.428rem;
+}
+
+.section-title__text_bottom::before {
+  content: "";
+  display: block;
+  margin: auto;
+  margin-bottom: 1.5rem;
+  width: 55px;
+  height: 2px;
+  border-radius: 30px;
+  background-color: #E3B873;
+}
+
 .section-title__image {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1005,10 +1024,6 @@ input.invalid {
   padding: 1.214rem 2.6rem;
 }
 
-.design {
-  padding-bottom: 40rem;
-}
-
 .design__sectoion-title {
   margin-bottom: 2rem;
 }
@@ -1047,6 +1062,73 @@ input.invalid {
   bottom: -1.79rem;
   font-family: 'Yeseva One', cursive;
   font-size: 1.29rem;
+  text-transform: uppercase;
+  background-color: #E3B873;
+  color: #fff;
+  padding: 1.214rem 2.6rem;
+}
+
+.steps {
+  background-color: #131313;
+  margin-top: -40rem;
+  padding-bottom: 70rem;
+}
+
+.command {
+  margin-top: -35rem;
+  margin-bottom: 60rem;
+}
+
+.command .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.command__section-title {
+  margin-bottom: 2rem;
+}
+
+.command .card__text {
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+  margin-top: -7rem;
+  max-width: 16.64rem;
+  padding: 1.79rem 2.14rem;
+  background-color: #fff;
+  -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+          box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+}
+
+.command .card__title {
+  font-family: 'Yeseva One', cursive;
+  font-size: 1.27rem;
+  margin-top: 0;
+  margin-bottom: 0.7rem;
+}
+
+.command .card__list {
+  padding: 0;
+  margin: 0;
+  padding-left: 1rem;
+  margin-bottom: 2.5rem;
+  font-size: 1.07rem;
+  line-height: 1.79rem;
+  color: #959595;
+}
+
+.command .card__pricetag {
+  position: absolute;
+  left: 0;
+  bottom: -1.79rem;
+  font-family: 'Yeseva One', cursive;
+  font-size: 1rem;
   text-transform: uppercase;
   background-color: #E3B873;
   color: #fff;

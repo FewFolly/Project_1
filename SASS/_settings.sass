@@ -62,6 +62,22 @@ img
                 font-size: 1.428rem
                 text-align: center
                 margin-bottom: 75px
+            // Настройка текста внизу секции
+            &_bottom
+                max-width: 40.571rem
+                margin: auto
+                margin-top: 80px
+                text-align: center
+                font-size: 1.428rem
+                &::before
+                    content: ""
+                    display: block
+                    margin: auto
+                    margin-bottom: 1.5rem
+                    width: 55px
+                    height: 2px
+                    border-radius: 30px
+                    background-color: $primary
         // Настройка положения картинки в оглавлении секции
         &__image
             display: flex
