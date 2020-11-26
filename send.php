@@ -26,15 +26,19 @@ try {
 
     //Recipients
     $mail->setFrom('petrrprogramenko@gmail.com', 'Petr');
-    $mail->addAddress('insane666social@gmail.com');     // Add a recipient
+    $mail->addAddress('jokercroker327@gmail.com');     // Add a recipient
 
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
     $mail->Subject = 'New message from Project_1';
     $mail->Body    = "Имя пользователя: ${userName},телефон пользователя: ${userPhone},почта пользователя: ${userEmail}";
 
-    $mail->send();
-    header('Location: thanks.html');
+    if ($mail->send()) {
+        echo "ok";
+    } else {
+        echo "Письмо не отправлено, есть ошибка. Код ошибки: {$mail->ErrorInfo}";
+    }
+    // header('Location: thanks.html');
 } catch (Exception $e) {
     echo "Письмо не отправлено, есть ошибка. Код ошибки: {$mail->ErrorInfo}";
 }
