@@ -363,6 +363,7 @@ template {
 }
 
 html {
+  scroll-behavior: smooth;
   font-size: 14px;
 }
 
@@ -1373,6 +1374,11 @@ input.invalid {
 
 .info__social-item {
   margin-left: 1.071rem;
+}
+
+.info__phone {
+  color: #E3B873;
+  text-decoration: none;
 }
 
 .modal {
