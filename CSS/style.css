@@ -431,6 +431,10 @@ img {
   max-width: 31.57rem;
 }
 
+.section-title__text_upper {
+  text-transform: uppercase;
+}
+
 .section-title__text_center {
   max-width: 35.714rem;
   margin: auto;
@@ -619,6 +623,14 @@ input.invalid {
 
 .col-50 {
   width: 50%;
+}
+
+.col-40 {
+  width: 40%;
+}
+
+.col-60 {
+  width: 60%;
 }
 
 .header {
@@ -1030,6 +1042,10 @@ input.invalid {
   padding: 1.214rem 2.6rem;
 }
 
+.design {
+  margin-bottom: -35rem;
+}
+
 .design__sectoion-title {
   margin-bottom: 2rem;
 }
@@ -1074,10 +1090,105 @@ input.invalid {
   padding: 1.214rem 2.6rem;
 }
 
-.steps {
-  background-color: #131313;
-  margin-top: -34rem;
-  padding-bottom: 70rem;
+.swiper {
+  padding-bottom: 40rem;
+  padding-top: 40rem;
+}
+
+.swiper-container_mr {
+  margin-top: 6.571rem;
+}
+
+.swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.swiper-slide__page {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 80px;
+}
+
+.swiper-slide__item {
+  width: 30%;
+  margin-bottom: 50px;
+}
+
+.swiper-slide__link {
+  font-family: 'Yeseva One', cursive;
+  font-size: 1.285rem;
+  line-height: 1.782rem;
+}
+
+.swiper-slide__link_border {
+  border-bottom: 2px solid #E3B873;
+  border-radius: 5%;
+  max-width: 1.85rem;
+}
+
+.swiper-slide__text {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  margin-bottom: 2.42rem;
+  padding-bottom: 2rem;
+}
+
+.swiper-slide__heading {
+  font-size: 1.285rem;
+  line-height: 1.78rem;
+  font-family: 'Yeseva One', cursive;
+  color: #E3B873;
+  text-transform: uppercase;
+  margin-bottom: 0.64rem;
+  font-weight: 400;
+}
+
+.swiper-slide__value {
+  font-size: 1.071rem;
+  line-height: 1.819rem;
+}
+
+.swiper-pagination-bullet {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fff;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  bottom: 0;
+  top: auto;
+  background-size: 42px;
+  width: 42px;
+  height: 14px;
+}
+
+.swiper-button-prev::after, .swiper-button-next::after {
+  display: none;
+}
+
+.swiper-button-prev {
+  left: 0;
+  background: url(../IMG/icons/arrow-prev.svg) no-repeat center;
+}
+
+.swiper-button-next {
+  background: url(../IMG/icons/arrow-next.svg) no-repeat center;
+}
+
+.swiper-button-next_mr {
+  margin-left: 47px;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  width: auto;
+  bottom: 0;
 }
 
 .command {
