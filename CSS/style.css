@@ -494,6 +494,7 @@ img {
   border-radius: 2px;
   text-transform: uppercase;
   font-size: 0.93rem;
+  outline: none;
 }
 
 .button:hover {
@@ -924,6 +925,17 @@ input.invalid {
 
 .control__button {
   padding: 1.285rem 4.785rem;
+  -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.4);
+          box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.4);
+  -webkit-transition: -webkit-box-shadow 0.3s;
+  transition: -webkit-box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+}
+
+.control__button:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .control__input {
@@ -1031,7 +1043,6 @@ input.invalid {
 
 .card__pricetag {
   position: absolute;
-  cursor: pointer;
   left: 0;
   bottom: -1.79rem;
   font-size: 1.29rem;
