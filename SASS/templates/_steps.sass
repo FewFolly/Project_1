@@ -13,6 +13,10 @@
         &__item
             width: 30%
             margin-bottom: 50px
+            color: $light
+            opacity: 0.5
+            &_active
+                opacity: 1
         &__link
             font-family: 'Yeseva One', cursive
             font-size: 1.285rem
@@ -21,6 +25,12 @@
                 border-bottom: 2px solid $primary
                 border-radius: 5%
                 max-width: 1.85rem
+                opacity: 0.5
+            &_border-active
+                border-bottom: 2px solid $primary
+                border-radius: 5%
+                max-width: 1.85rem
+                opacity: 1
         &__text
             flex-basis: 50%
             margin-bottom: 2.42rem

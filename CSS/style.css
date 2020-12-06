@@ -677,6 +677,12 @@ input.invalid {
 
 .phone {
   color: #E3B873;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+.phone:hover {
+  color: #ffd89d;
 }
 
 .contacts__phone {
@@ -813,6 +819,12 @@ input.invalid {
           transform: rotate(90deg);
   line-height: 0.8;
   font-size: 1.1rem;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+.inst__link:hover {
+  color: #ffd89d;
 }
 
 .inst__link::after {
@@ -946,6 +958,13 @@ input.invalid {
   position: relative;
   margin: auto;
   cursor: pointer;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.video__play:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .projects {
@@ -1128,6 +1147,12 @@ input.invalid {
 .swiper-slide__item {
   width: 30%;
   margin-bottom: 50px;
+  color: #fff;
+  opacity: 0.5;
+}
+
+.swiper-slide__item_active {
+  opacity: 1;
 }
 
 .swiper-slide__link {
@@ -1140,6 +1165,14 @@ input.invalid {
   border-bottom: 2px solid #E3B873;
   border-radius: 5%;
   max-width: 1.85rem;
+  opacity: 0.5;
+}
+
+.swiper-slide__link_border-active {
+  border-bottom: 2px solid #E3B873;
+  border-radius: 5%;
+  max-width: 1.85rem;
+  opacity: 1;
 }
 
 .swiper-slide__text {
